@@ -9,7 +9,6 @@ public partial class RaceDayContext : DbContext
     public RaceDayContext()
     {
     }
-
     public RaceDayContext(DbContextOptions<RaceDayContext> options)
         : base(options)
     {
