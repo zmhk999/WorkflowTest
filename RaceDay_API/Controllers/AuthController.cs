@@ -22,7 +22,6 @@ namespace RaceDay_API.Controllers
         {
             _context = context;
         }
-
         // REGISTER
         [AllowAnonymous]
         [HttpPost("register")]
