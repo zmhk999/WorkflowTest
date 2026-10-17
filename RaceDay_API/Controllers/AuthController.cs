@@ -38,11 +38,9 @@ namespace RaceDay_API.Controllers
                     "Username, password and email are required.");
             }
 
-            if (dto.RoleName != "Organiser" &&
-                dto.RoleName != "Participant")
+            if (dto.RoleName != "Organiser" && dto.RoleName != "Participant")
             {
-                return BadRequest(
-                    "Role must be Organiser or Participant.");
+                return BadRequest("Role must be Organiser or Participant.");
             }
 
             bool exists = await _context.UserProfiles.AnyAsync(u =>
